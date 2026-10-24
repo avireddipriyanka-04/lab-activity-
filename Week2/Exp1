@@ -1,8 +1,18 @@
-#include<stdio.h>
+
+#include <stdio.h>
+
 int main()
 {
- int a;
- printf("Enter the value:");
- scanf("%d",&a);
- printf("%d is a number",a);
+    float a, b, c, sum, average;
+
+    printf("Enter three numbers: ");
+    scanf("%f %f %f", &a, &b, &c);
+
+    sum = a + b + c;
+    average = sum / 3;
+
+    printf("Sum = %.2f\n", sum);
+    printf("Average = %.2f", average);
+
+    return 0;
 }
