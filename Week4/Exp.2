@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main() {
+    float num1, num2, num3, max;
+
+    printf("Enter three numbers: ");
+    scanf("%f %f %f", &num1, &num2, &num3);
+
+    // Using nested ternary (conditional) operator
+    max = (num1 > num2) ? ((num1 > num3) ? num1 : num3) : ((num2 > num3) ? num2 : num3);
+
+    printf("Maximum number is: %.2f\n", max);
+
+    return 0;
+}
