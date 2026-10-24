@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main()
+{
+    int A, B, C, D, E, F, G;
+    int result1, result2, result3, result4;
+
+    printf("Enter A B C D E F G: ");
+    scanf("%d %d %d %d %d %d %d",
+          &A, &B, &C, &D, &E, &F, &G);
+
+    result1 = A + B * C + D * E + F * G;
+    result2 = A / B * C - B + A * D / 3;
+
+    result3 = A++ + B-- - --A;
+
+    result4 = (A++) + (++i);
+
+    printf("a = %d\n", result1);
+    printf("b = %d\n", result2);
+    printf("c = %d\n", result3);
+
+    return 0;
+}
